@@ -13,7 +13,14 @@ class _MorePageState extends State<MorePage> {
         title: Text('更多'),
       ),
       body: Container(
-        child: Text('更多'),
+        padding: EdgeInsets.only(top: 80),
+        child: Column(
+          children: [
+            ListTile(title: Text("我的订单"), leading: Icon(Icons.apartment)),
+            ListTile(title: Text("我的订单"), leading: Icon(Icons.app_blocking)),
+            ListTile(title: Text("设置"), leading: Icon(Icons.settings)),
+          ],
+        ),
       ),
     );
   }

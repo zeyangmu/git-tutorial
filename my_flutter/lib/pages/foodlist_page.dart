@@ -82,8 +82,8 @@ class _FoodListPageState extends State<FoodListPage> {
                                     children: [
                                       Image.network(
                                         "${snapshot.data[index].pic}",
-                                        height: 80,
-                                        width: 80,
+                                        height: 90,
+                                        width: 90,
                                       ),
                                       SizedBox(
                                         width: 10,
@@ -99,6 +99,11 @@ class _FoodListPageState extends State<FoodListPage> {
                                                   fontSize: 16,
                                                   fontWeight: FontWeight.bold),
                                             ),
+                                            SizedBox(
+                                              height: 10,
+                                            ),
+                                            Text(
+                                                "适合: ${snapshot.data[index].peoplenum}"),
                                             SizedBox(
                                               height: 10,
                                             ),
